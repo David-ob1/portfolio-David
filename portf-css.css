@@ -1,0 +1,85 @@
+:root{
+    --light:#011627;
+    --color-text:#fdfffc;
+    --box-shadow:5px 5px 15px #0d1b2a, -5px -5px 15px #000814;
+    --gradiente:linear-gradient(-45deg, #38b000, #ccff33)
+}
+
+body{
+    color: var(--color-text);
+    background: var(--light);
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+}
+
+.logo{
+    text-align: center;
+    cursor: pointer;
+}
+
+.container{
+    width: 1200px;
+    max-width:80%;
+    margin: auto;
+}
+
+.banner{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-bottom:1px solid #ccc ;
+    padding-bottom:50px;
+}
+
+.banner .content{
+    text-align: justify;
+    padding-right: 50px;
+}
+
+.banner .content h1{
+    font-size: 4.5em;
+    margin: 0;
+}
+
+.gradientText{
+    display: inline-block;
+    background: var(--gradiente);
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+.job{
+    display: inline-block;
+}
+
+.job::before{
+    content: attr(data-job1);
+    overflow: hidden;
+    display: inline-flex;
+    animation: effectText 1s linear infinite alternate,
+    changeText 4s linear infinite
+}
+
+@keyframes identifier {
+    from{
+        max-width: 0;
+    }to{
+        max-width: 500px;
+    }
+    
+}
+
+
+@keyframes changeText {
+    from{
+        content:attr(data-job1);
+    }to{
+       content: attr(data-job2);
+    }
+    
+}
+
+.find{
+    margin-top: 50px;
+}
