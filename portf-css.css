@@ -213,3 +213,39 @@ body{
     transition: all 0.5s ;
     font-size: 20px;
 } */
+
+@media only screen and  (max-width:1024px) {
+    .banner{
+        grid-template-columns: 40% 60%;
+    }
+
+    .banner.content h1{
+        font-size: 2em;
+    }
+    .listProyect{
+        grid-template-columns:repeat(2, 1fr) ;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    .banner{
+        grid-template-columns: 1fr;
+    }
+
+    .banner .content h1{
+        font-size: 1.2em;
+    }
+
+    .banner .avatar{
+        grid-row-start:1;
+    }
+    .banner .content{
+        padding-right:0px ;
+    }
+    .listSkill,
+    .listProyect{
+        grid-template-columns: 1fr;
+    }
+    
+}
