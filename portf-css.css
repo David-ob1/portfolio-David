@@ -58,10 +58,10 @@ body{
     overflow: hidden;
     display: inline-flex;
     animation: effectText 1s linear infinite alternate,
-    changeText 4s linear infinite
+    changeText 4s linear infinite;
 }
 
-@keyframes identifier {
+@keyframes effectText {
     from{
         max-width: 0;
     }to{
@@ -69,7 +69,6 @@ body{
     }
     
 }
-
 
 @keyframes changeText {
     from{
@@ -83,3 +82,134 @@ body{
 .find{
     margin-top: 50px;
 }
+
+.find ul {
+    padding:0;
+    list-style: none;
+    display: flex;
+}
+
+.find ul li,
+.contact li{
+    width: 50px;
+    height: 50px;
+    box-shadow: var(--box-shadow);
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ;
+    font-size: 20px;
+}
+
+.find ul li:hover,
+.contact li:hover{
+    color: #fff;
+    background-image: var(--gradiente);
+}
+
+.banner .avatar{
+    position: relative;
+    height: max-content;
+    text-align: center;
+}
+
+.banner .avatar::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    z-index: -1;
+    bottom: 0;
+    border-radius:10px;
+    box-shadow: var(--box-shadow);   
+}
+
+.banner img {
+    width: 90%;
+}
+
+.title{
+    text-align: center;
+}
+
+.listSkill{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 80px;
+}
+
+.listSkill .evaluate{
+    width: 100%;
+    height: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    margin-top:20px ;
+    position: relative;
+}
+
+.listSkill .evaluate::before{
+    content: "";
+    position: absolute;
+    width: var(--point);
+    height: 100%;
+    background: var(--gradiente);
+    border-radius: 10px;
+}
+
+.listProyect{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom:50px;
+}
+
+.listProyect .item  {
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+
+
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.listProyect .item img{
+    width: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.listProyect .item img:hover{
+    width: 80%;
+}
+
+.contact{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* .contact li{
+    width: 50px;
+    height: 50px;
+    box-shadow: var(--box-shadow);
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ;
+    font-size: 20px;
+} */
