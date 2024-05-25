@@ -1,0 +1,72 @@
+[
+    {
+        "id":"1",
+        "title":"Dolittle Pet Shop",
+        "img":"dolittle.jpg",
+        "link":"",
+        "repository":"https://github.com/David-ob1/tienda-online"
+    },
+    {
+        "id":"2",
+        "title":"Halloween page",
+        "img":"halloween.png",
+        "link":"https://halloween-with-efects.vercel.app/",
+        "repository":"https://github.com/David-ob1/Halloween-with-efects"
+    },
+    {
+        "id":"3",
+        "title":"Chocolate Websites",
+        "img":"chocolate web.png",
+        "link":"",
+        "repository":"https://github.com/David-ob1/web-del-chocolate"
+    },
+    {
+        "id":"4",
+        "title":"Halo page (dark mode)",
+        "img":"halo.png",
+        "link":"https://halo-page.vercel.app/",
+        "repository":"https://github.com/David-ob1/halo-page"
+    },
+    {
+        "id":"5",
+        "title":"App DBD",
+        "img":"java DBD.png",
+        "link":"",
+        "repository":"https://github.com/David-ob1/api-dbd"
+    },
+    {
+        "id":"6",
+        "title":"Mindbro HB",
+        "img":"mindbro.png",
+        "link":"",
+        "repository":"https://github.com/David-ob1/home-bank"
+    },
+    {
+        "id":"7",
+        "title":"Valorant page",
+        "img":"valorant.png",
+        "link":"",
+        "repository":"https://github.com/David-ob1/Valorant-front"
+    },
+    {
+        "id":"8",
+        "title":"Pokedex",
+        "img":"pokeApi.png",
+        "link":"https://pokedex-sigma-bice-31.vercel.app/",
+        "repository":"https://github.com/David-ob1/pokedex"
+    },
+    {
+        "id":"9",
+        "title":"Chapter-One",
+        "img":"libreria.png",
+        "link":"",
+        "repository":"https://github.com/David-ob1/Chapter-One"
+    },
+    {
+        "id":"10",
+        "title":"E-Banco",
+        "img":"e-bank.png",
+        "link":"",
+        "repository":"https://github.com/David-ob1/Chapter-One"
+    }
+]
