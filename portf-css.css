@@ -1,9 +1,16 @@
+
+
 :root{
     --light:#011627;
     --color-text:#fdfffc;
     --box-shadow:5px 5px 15px #0d1b2a, -5px -5px 15px #000814;
     --gradiente:linear-gradient(-45deg, #38b000, #ccff33)
 }
+
+.swal2-popup {
+    background-color:var(--light); /* Azul claro como color de fondo */
+    color: whitesmoke;
+  }
 
 body{
     color: var(--color-text);
