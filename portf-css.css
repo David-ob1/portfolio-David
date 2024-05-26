@@ -186,7 +186,7 @@ body{
 .listProyect .item  {
     text-align: center;
     box-shadow: var(--box-shadow);
-    padding: 20px;
+    padding: 10px;
 
 
     border-radius: 10px;
@@ -218,6 +218,10 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+
+.hosted{
+    color: #46b705;
 }
 
 

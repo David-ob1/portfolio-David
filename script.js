@@ -88,12 +88,14 @@ fetch(api)
  }
 
  function createCard(obj){
-    let host = obj.link == "" ? "" : "Hosted"
+    let host = obj.link == "" ? "" : "<p class='hosted'>Hosted</p>"
     console.log(host)
     return`
         <div class="item proyect" id="${obj.id}">
             <img src="./images/${obj.img}" alt="">
-            <div class="name">${obj.title}</div>
+            <div class="name">${obj.title} 
+            
+            ${host}</div>
 
         </div>
     `
