@@ -98,6 +98,7 @@ body{
 
 .find ul a,
 .contact a{
+    margin: 10px;
     transition: 1s;
     text-decoration: none;
 }
@@ -108,7 +109,6 @@ body{
     width: 50px;
     height: 50px;
     box-shadow: var(--box-shadow);
-    margin: 10px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -222,6 +222,7 @@ body{
 
 .hosted{
     color: #46b705;
+    margin: 3px;
 }
 
 

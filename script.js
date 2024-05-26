@@ -27,8 +27,8 @@ fetch(api)
 
 
             Swal.fire({
-                title: "Are you sure?",
-                text: "You won't be able to revert this!",
+                title: "A donde vamos Maestro?",
+                text: "Queres ver la pagina web o el repositorio de Git!",
                 icon: "question",
                 showCancelButton: true,
                 confirmButtonColor: "#0d1117",
@@ -50,8 +50,8 @@ fetch(api)
 
                     if(proyectoSelected.link == ""){
                         swal.fire({
-                            title: "Cancelled",
-                            text: "Your imaginary file is safe :)",
+                            title: "Error",
+                            text: "Todavia no pude hostear el proyecto                                                       :)",
                             icon: "error"
                           });
                     }else{
@@ -60,10 +60,6 @@ fetch(api)
                  
                 }
               });
-
-
-
-
 
         }
         
