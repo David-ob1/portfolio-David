@@ -1,9 +1,16 @@
+
+
 :root{
     --light:#011627;
     --color-text:#fdfffc;
     --box-shadow:5px 5px 15px #0d1b2a, -5px -5px 15px #000814;
     --gradiente:linear-gradient(-45deg, #38b000, #ccff33)
 }
+
+.swal2-popup {
+    background-color:var(--light); /* Azul claro como color de fondo */
+    color: whitesmoke;
+  }
 
 body{
     color: var(--color-text);
@@ -91,6 +98,7 @@ body{
 
 .find ul a,
 .contact a{
+    margin: 10px;
     transition: 1s;
     text-decoration: none;
 }
@@ -101,7 +109,6 @@ body{
     width: 50px;
     height: 50px;
     box-shadow: var(--box-shadow);
-    margin: 10px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -179,7 +186,7 @@ body{
 .listProyect .item  {
     text-align: center;
     box-shadow: var(--box-shadow);
-    padding: 20px;
+    padding: 10px;
 
 
     border-radius: 10px;
@@ -211,6 +218,11 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+
+.hosted{
+    color: #46b705;
+    margin: 3px;
 }
 
 
