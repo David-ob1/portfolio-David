@@ -1,15 +1,33 @@
-const api = "json.json"
+const apiTecnologias = "tecnologias.json"
+const apiProyectos = "json.json"
 
 const containerProyect = document.getElementById("containerProyect")
 
-fetch(api)
+const $tecnologias = document.getElementById("skillsContainer")
+
+
+fetch(apiTecnologias)
+ .then(response => response.json())
+ .then(data =>{
+    let tecnologias = data
+
+    let template = createTemplate(tecnologias,createCardsSkills)
+
+    CreateElementHtml($tecnologias,template)
+
+
+ })
+ .catch(error => console.log(error))
+
+fetch(apiProyectos)
  .then(response => response.json())
  .then(data => {
 
      const proyectos = data
-     let template = CreateTemplate(proyectos)
+     let template = createTemplate(proyectos,createCardsProyecto)
  
      CreateElementHtml(containerProyect,template)
+     
      
 
      
@@ -73,17 +91,20 @@ fetch(api)
  .catch(error => console.log(error))
 
 
- function CreateTemplate(array){
+ function createTemplate(array,createFunction){
     let template = ""
 
     for(item of array){
-        template += createCard(item) 
+        template += createFunction(item) 
     }
 
     return template
  }
 
- function createCard(obj){
+
+
+
+ function createCardsProyecto(obj){
     let host = obj.link == "" ? "" : "<p class='hosted'>Hosted</p>"
     console.log(host)
     return`
@@ -95,6 +116,41 @@ fetch(api)
 
         </div>
     `
+ }
+
+
+ function createCardsSkills (obj){
+
+    const conicGradient = `conic-gradient(
+        #00000000 0deg,
+        #00000000 10deg,
+        ${obj.color1} 50deg,
+        #00000000 50deg,
+        #00000000 100deg,
+        ${obj.color2} 150deg,
+        #00000000 150deg,
+        #00000000 190deg,
+        ${obj.color1} 240deg,
+        #00000000 240deg,
+        #00000000 280deg,
+        ${obj.color2} 330deg,
+        #00000000 330deg
+    )`;
+
+    return`
+     <article class="wrapper">
+                <div class="spinner" style="background:${conicGradient}"></div>
+               
+                <div class="tecnologia">
+                    <img src="./images/${obj.img}"  class="tecnologia-icon" alt="">
+                    <h4 class="tecnologia-nombre"> ${obj.title} </h4>
+
+                </div>
+
+      </article>
+      `
+
+
  }
 
  function CreateElementHtml(container,template){

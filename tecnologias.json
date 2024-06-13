@@ -1,0 +1,60 @@
+[
+{
+    "img":"html.svg",
+    "title": "HTML",
+    "color1":"#883e30",
+    "color2":"#ef652a"
+},
+{
+    "img":"css.svg",
+    "title": "CSS",
+    "color1":"#1c88c7",
+    "color2":"#1b73ba"
+}
+,
+{
+    "img":"javascript.svg",
+    "title": "JavaScript",
+    "color1":"#f0db4f",
+    "color2":"#f0db4f"
+},
+{
+    "img":"vuejs-icon.svg",
+    "title": "vue",
+    "color1":"#42b883",
+    "color2":"#35495e"
+}
+,
+{
+    "img":"springio-icon.svg",
+    "title": "spring",
+    "color1":"#68bd45",
+    "color2":"#3d7842"
+}
+,{
+    "img":"java.svg",
+    "title": "Java",
+    "color1":"#e76f00",
+    "color2":"#5382a1"
+},
+{
+    "img":"json-icon.svg",
+    "title": "Json",
+    "color1":"#6c6c6c",
+    "color2":"#6c6c6c"
+
+},
+{
+    "img":"postgresql-icon.svg",
+    "title": "postgresql",
+    "color1":"#336791",
+    "color2":"#6c91b0"
+},
+{
+    "img":"getbootstrap-icon.svg",
+    "title": "bootstrap",
+    "color1":"#421e47",
+    "color2":"#9c8ca1"
+}
+
+]

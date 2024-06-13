@@ -20,7 +20,93 @@ body{
     font-size: 15px;
 }
 
-.logo{
+
+    #skillsContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .wrapper{
+        margin: 10px 5px;
+        border-radius: 10px;
+        display: flex;
+        padding:4px ;
+        width: 185px;
+        height: 155px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #3a3a3a3a; */
+        overflow: hidden;
+    }
+
+    .tecnologia{
+        background-color: #0a263e;
+    
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        width: 180px;
+        height: 150px;
+    
+    }
+
+    .tecnologia > .tecnologia-icon{
+        width: 60px;
+    }
+
+    .tecnologia-nombre{
+        text-transform: uppercase;
+        font-size: 16px;
+        margin: 0;
+    }
+
+
+    .spinner{
+        position: absolute;
+        height: 150%;
+        width: 150%;
+        background-image:conic-gradient(
+        #00000000 0deg ,
+        #00000000 10deg,
+        #1c88c7 50deg,
+
+        #00000000 50deg ,
+        #00000000 100deg,
+        #1b73ba 150deg,
+
+        #00000000 150deg ,
+        #00000000 190deg,
+        #1c88c7 240deg,
+
+        #00000000 240deg ,
+        #00000000 280deg,
+        #1b73ba 330deg,
+        #00000000 330deg
+
+
+        );
+
+        animation: spinner 6s linear infinite;
+    }
+
+    @keyframes spinner{
+        100%{
+            transform: rotate(360deg);
+        }
+
+
+    }
+
+
+
+.logo{  
     text-align: center;
     cursor: pointer;
 }
@@ -237,6 +323,13 @@ body{
     }
     .listProyect{
         grid-template-columns:repeat(2, 1fr) ;
+        
+    }
+
+    #skillsContainer{
+        grid-template-columns:repeat(3, 1fr) ;
+        gap: 30px;
+
     }
 
 }
@@ -260,5 +353,24 @@ body{
     .listProyect{
         grid-template-columns: 1fr;
     }
+
+
+    #skillsContainer{
+        grid-template-columns:repeat(2, 1fr) ;
+        gap: 5px;
+
+    }
+
+    .tecnologia{
+        width: 150px;
+        height: 130px;
+    }
+
+    .wrapper{
+        width: 155px;
+        height: 135px;
+    }
+
+
     
 }
