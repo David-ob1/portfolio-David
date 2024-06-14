@@ -231,6 +231,7 @@ body{
 }
 
 .banner .avatar{
+  
     position: relative;
     height: max-content;
     text-align: center;
