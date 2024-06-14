@@ -231,7 +231,7 @@ body{
 }
 
 .banner .avatar{
-  
+    filter:  drop-shadow(1px 0px 20px rgba(116, 106, 106, 0.395));
     position: relative;
     height: max-content;
     text-align: center;
