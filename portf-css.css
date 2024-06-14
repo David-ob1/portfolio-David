@@ -20,12 +20,18 @@ body{
     font-size: 15px;
 }
 
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
     #skillsContainer{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        justify-content: space-between;
+        justify-items: center; 
         align-items: center;
+        
         width: 100%;
     }
 
@@ -105,6 +111,17 @@ body{
     }
 
 
+    .CV{
+        color:white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 25px;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        border: 1px solid #0a263e;
+        
+    }
 
 .logo{  
     text-align: center;
@@ -176,6 +193,9 @@ body{
     margin-top: 50px;
 }
 
+.find h3{
+    margin-top: 25px;
+}
 .find ul {
     padding:0;
     list-style: none;
@@ -332,6 +352,12 @@ body{
 
     }
 
+    .CV{
+        font-size: 18px;
+        padding: 7px 15px;
+
+    }
+
 }
 
 @media only screen and (max-width:767px) {
@@ -372,5 +398,10 @@ body{
     }
 
 
+    .CV{
+        font-size: 25px;
+        padding: 10px 20px;
+
+    }
     
 }
