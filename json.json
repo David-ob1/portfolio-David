@@ -4,7 +4,7 @@
         "title":"Dolittle Pet Shop",
         "img":"dolittle.jpg",
         "link":"",
-        "repository":"https://github.com/David-ob1/tienda-online"
+        "repository":"https://github.com/David-ob1/PetShop-Dolittle"
     },
     {
         "id":"2",
@@ -67,6 +67,6 @@
         "title":"E-Banco",
         "img":"e-bank.png",
         "link":"",
-        "repository":"https://github.com/David-ob1/Chapter-One"
+        "repository":"https://github.com/David-ob1/homebaking"
     }
 ]
